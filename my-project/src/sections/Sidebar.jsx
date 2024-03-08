@@ -4,6 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { SiSimpleanalytics } from "react-icons/si";
 import { IoSettingsSharp } from "react-icons/io5";
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
 
 const variants = {
   expanded: { width: "20%" },
@@ -17,9 +18,9 @@ const navItems = [
     link: "/dashboard",
   },
   {
-    name: "Messages",
+    name: <Link to="/Messages">Messages</Link>,
     icon: MdOutlineMessage,
-    link: "/messages",
+    
   },
   {
     name: "Analytics",
